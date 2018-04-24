@@ -1,6 +1,29 @@
 # Numerical-methods
 Matlab code, started in first year Mechanical engineering course
 
+# Huen's
+The Heun function to aproximate the values along a ordinary differential 
+equation points given to the funtion. 
+   Heun's method takes a Euler's method aproximation of an ODE
+   and uses an average method to get a more accurate data point. It
+   takes the Euler's estimations as the two slope end points and averages them
+   together. outputs include a graph of the output values for t and y
+  
+   Inputs:
+       dydt:  the ordinary differential equation being investigated, enter
+              as anonomus function      
+       tspan: the time span that the ODE covers wrieten ex: [0 2] for 2
+              seconds
+       y0:    the starting condition y value
+       h:     step size ex: 0.5 for half a second steps, smaller step sizes
+              will increase output accuracy
+       es:    OPTINAL, accuracy estimation. default if empty is 0.0001
+       maxit: OPTINAL, max number of iterations. default if empty is 50
+   Output:
+       t:     last time point
+       y:     last y value for ODE
+       Graph of t and y
+
 # Simpson.m
 Simpson uses the simpson 1/3 rules to estamate the itegral of none
 countinous data. The independent varrible must be equally spaced. If there 
